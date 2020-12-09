@@ -1,0 +1,163 @@
+$primary: #45b9e7;
+$secondary: #000000;
+.ContainerOfBoxes {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.boxContentQuestion:hover {
+  box-shadow: none !important;
+}
+.boxContent.dark {
+  background-color: black;
+  a {
+    color: white;
+  }
+}
+.boxContent {
+  border: 2px solid rgb(220, 220, 220);
+  height: auto;
+  color: black;
+  background-color: white;
+  padding: 20px 20px 20px 20px;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  width: 45%;
+  margin: 10px;
+  border-radius: 10px;
+  transition: 300ms;
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  h1 {
+    justify-content: center;
+  }
+
+  .boxP {
+    margin-top: 2px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  .buttonQuestion {
+    border: 2px solid transparent;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 10px;
+    transition: 300ms;
+    height: 60px;
+    width: 100px;
+    // padding-left: 10px;
+    // padding-right: 10px;
+  }
+  .buttonQuestion:active {
+    transform: scale(0.8);
+  }
+  .ImageBlock {
+    display: block;
+  }
+  .buttonQuestion:hover {
+    border: 2px solid black;
+    transition: 300ms border;
+  }
+  .buttonQuestion:focus {
+    outline: none;
+  }
+  .correctButton {
+    background-color: green;
+    color: white;
+  }
+  .incorrectButton {
+    background-color: red;
+  }
+  .button {
+    background-color: white;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 300ms;
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 15px;
+    }
+  }
+  .button:focus {
+    outline: none;
+  }
+
+  .button:hover {
+    background-color: black;
+    transition: 300ms;
+    a {
+      color: white;
+    }
+  }
+}
+.boxContent:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media screen and (max-width: 950px) {
+  .boxContent {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .boxContent {
+    width: 100%;
+  }
+}
+.explanationOpen {
+  display: inline-block;
+  color: black;
+  transition: 300ms;
+  cursor: pointer;
+  width: auto;
+  margin-left: 3px;
+}
+.explanationOpen:hover {
+  color: rgb(82, 82, 244);
+}
+.explanation {
+  display: none;
+  margin-top: 10px;
+  margin-left: 3px;
+}
+.explanation.opened {
+  display: block;
+  margin-top: 10px;
+}
+.hint {
+  float: right;
+  transition: 200ms;
+  cursor: pointer;
+}
+.hint:hover {
+  color: rgb(82, 82, 244);
+}
+.clue:hover {
+  color: black;
+}
+.clue {
+  position: absolute;
+  right: 0px;
+  top: 15px;
+  display: none;
+}
+.clue.opened {
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  display: inline;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.boxTop {
+  position: relative;
+}

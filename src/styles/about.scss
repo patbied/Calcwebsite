@@ -1,0 +1,76 @@
+@media screen and (max-width: 900px) {
+  .aboutContainer {
+    width: 100%;
+  }
+}
+.aboutContainer {
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 80%;
+  margin-top: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 900px) {
+    .aboutCardContainer {
+      display: none !important;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .aboutCardContainerMobile {
+      display: flex !important;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  .aboutCardContainerMobile {
+    display: none;
+  }
+  .aboutCardContainer {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    height: 15vh;
+    margin-top: 3vh;
+
+    .aboutCard {
+      background-color: white;
+      border-radius: 5px;
+      border: 2px solid rgb(220, 220, 220);
+      width: 40%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+      .cardTitle {
+        margin-left: 10px;
+      }
+      @media screen and (max-width: 1160px) {
+        .cardTitle {
+          font-size: 23px;
+        }
+      }
+
+      .cardSubtitle {
+        color: black;
+        margin-left: 10px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  .section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (max-width: 900px) {
+      .form {
+        display: none;
+      }
+    }
+  }
+}
