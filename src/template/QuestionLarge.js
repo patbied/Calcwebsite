@@ -45,8 +45,9 @@ export default function Question(props) {
     }
   }, []);
 
+  // style={{  }}
   return (
-    <div className="boxContent boxContentQuestion">
+    <div className="boxContent  Large boxContentQuestion">
       <div className="boxTop">
         <h2 style={{ display: 'inline' }}>{props.number}.</h2>
 
@@ -103,7 +104,7 @@ export default function Question(props) {
                 }
               }
             }}
-            className={`boxP buttonQuestion ${
+            className={`boxP buttonQuestion LargeButton ${
               correct1 ? 'correctButton' : ''
             } ${incorrect1 ? 'incorrectButton' : ''}`}
           >
@@ -139,7 +140,7 @@ export default function Question(props) {
                 }
               }
             }}
-            className={`boxP buttonQuestion ${
+            className={`boxP buttonQuestion LargeButton ${
               correct2 ? 'correctButton' : ''
             } ${incorrect2 ? 'incorrectButton' : ''} `}
           >
@@ -175,7 +176,7 @@ export default function Question(props) {
                 }
               }
             }}
-            className={`boxP buttonQuestion ${
+            className={`boxP buttonQuestion LargeButton ${
               correct3 ? 'correctButton' : ''
             } ${incorrect3 ? 'incorrectButton' : ''}`}
           >
@@ -211,7 +212,7 @@ export default function Question(props) {
                 }
               }
             }}
-            className={`boxP buttonQuestion ${
+            className={`boxP buttonQuestion LargeButton ${
               correct4 ? 'correctButton' : ''
             } ${incorrect4 ? 'incorrectButton' : ''}`}
           >

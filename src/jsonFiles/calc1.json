@@ -41,9 +41,9 @@
     "Question": "images/Calc1Q5.svg",
     "answer1": "images/0.5.svg",
     "answer2": "images/sqrt(2).svg",
-    "answer3": "images/one.svg",
-    "answer4": "images/five.svg",
-    "correct": "D"
+    "answer3": "images/1div4.svg",
+    "answer4": "images/undef.svg",
+    "correct": "C"
   },
   {
     "Number": 6,

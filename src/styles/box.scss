@@ -17,6 +17,9 @@ $secondary: #000000;
     color: white;
   }
 }
+.Large {
+  width: 90% !important;
+}
 .boxContent {
   border: 2px solid rgb(220, 220, 220);
   height: auto;
@@ -45,6 +48,11 @@ $secondary: #000000;
     display: flex;
     justify-content: center;
   }
+  @media screen and (max-width: 650px) {
+    .buttons {
+      flex-wrap: wrap;
+    }
+  }
   .buttonQuestion {
     border: 2px solid transparent;
     margin-left: 3px;
@@ -55,6 +63,10 @@ $secondary: #000000;
     width: 100px;
     // padding-left: 10px;
     // padding-right: 10px;
+  }
+  .LargeButton {
+    width: 250px;
+    height: 80px;
   }
   .buttonQuestion:active {
     transform: scale(0.8);
@@ -160,4 +172,21 @@ $secondary: #000000;
 }
 .boxTop {
   position: relative;
+}
+.clearQuestions {
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  p {
+    font-size: 20px;
+    transition: 200ms;
+  }
+}
+.clearQuestions:hover {
+  p {
+    color: rgb(82, 82, 244);
+  }
 }

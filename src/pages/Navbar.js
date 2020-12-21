@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/navbar.scss';
-import Moon from '../images/moon.svg';
-import Sun from '../images/sun.svg';
+import Moon from '../srcImg/moon.svg';
+import Sun from '../srcImg/sun.svg';
 import SVG from 'react-inlinesvg';
 import { useSpring, animated } from 'react-spring';
 export default function Navbar(props) {
@@ -14,7 +14,9 @@ export default function Navbar(props) {
     <div>
       <header className={`${props.darkmode ? '' : 'dark'}`}>
         <div className="navBrand">
-          <h2>Learn Calculus</h2>
+          <h2>
+            <a href="/">Learn Calculus</a>
+          </h2>
         </div>
 
         <div className="navLinks">

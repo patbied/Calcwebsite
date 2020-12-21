@@ -1,26 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/calc.scss';
 import '../styles/box.scss';
-import Question from '../template/Question';
-import Questions from '../jsonFiles/calc1.json';
-import react from 'react';
+import QuestionLarge from '../template/QuestionLarge';
+import Questions from '../jsonFiles/calc2.json';
 
-export default function Calc1() {
-  const [refresh, startRefresh] = useState(false);
-  function clearQs() {
-    Object.keys(localStorage).forEach((key) => {
-      if (key.substring(0, 12) == 'images/Calc1') {
-        localStorage.removeItem(key);
-      }
-    });
-    window.location.reload();
-  }
+export default function Calc2() {
   return (
     <div>
       <div className="ContainerOfBoxes">
         {Questions.map((question) => {
           return (
-            <Question
+            <QuestionLarge
               key={question.Number}
               hint={question.hint}
               number={question.Number}
@@ -34,9 +24,6 @@ export default function Calc1() {
             />
           );
         })}
-        <button className="clearQuestions" onClick={clearQs}>
-          <p>Clear answers</p>
-        </button>
       </div>
     </div>
   );

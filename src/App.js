@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Navbar from './pages/Navbar';
 import Calc1 from './pages/Calc1';
+import Calc2 from './pages/Calc2';
 import './styles/all.scss';
 export default function App() {
   const [darkmode, setDarkmode] = useState(true);
@@ -27,6 +28,12 @@ export default function App() {
           darkmode={darkmode}
           exact
           component={Calc1}
+        ></Route>
+        <Route
+          path="/calc2"
+          darkmode={darkmode}
+          exact
+          component={Calc2}
         ></Route>
       </Switch>
     </Router>
