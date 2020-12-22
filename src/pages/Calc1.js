@@ -6,7 +6,6 @@ import Questions from '../jsonFiles/calc1.json';
 import react from 'react';
 
 export default function Calc1() {
-  const [refresh, startRefresh] = useState(false);
   function clearQs() {
     Object.keys(localStorage).forEach((key) => {
       if (key.substring(0, 12) == 'images/Calc1') {

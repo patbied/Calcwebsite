@@ -176,17 +176,47 @@ $secondary: #000000;
 .clearQuestions {
   border: 2px solid black;
   padding: 20px;
-  border-radius: 10px;
+  position: relative;
   background-color: white;
-  color: black;
+  z-index: 10;
+  width: 200px;
+  height: 75px;
+  border-radius: 10px;
+  margin-bottom: 50px;
   cursor: pointer;
+  transition: 150ms;
   p {
     font-size: 20px;
+    opacity: 1;
+
+    z-index: 13;
     transition: 200ms;
   }
 }
+.clearQuestions::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  top: 0;
+  background-color: red;
+  z-index: 11;
+  left: 0;
+  z-index: -1;
+  width: 0%;
+  transition: 200ms;
+  border-radius: 9px;
+}
 .clearQuestions:hover {
   p {
-    color: rgb(82, 82, 244);
+    color: white;
   }
+}
+.clearQuestions:hover::after {
+  width: 100%;
+}
+.clearQuestions:active::after {
+  background-color: rgb(195, 0, 0);
+}
+.clearQuestions:focus {
+  outline: 0;
 }

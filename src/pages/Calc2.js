@@ -5,6 +5,14 @@ import QuestionLarge from '../template/QuestionLarge';
 import Questions from '../jsonFiles/calc2.json';
 
 export default function Calc2() {
+  function clearQs() {
+    Object.keys(localStorage).forEach((key) => {
+      if (key.substring(0, 12) == 'images/Calc2') {
+        localStorage.removeItem(key);
+      }
+    });
+    window.location.reload();
+  }
   return (
     <div>
       <div className="ContainerOfBoxes">
@@ -24,6 +32,9 @@ export default function Calc2() {
             />
           );
         })}
+        <button className="clearQuestions" onClick={clearQs}>
+          <p>Clear answers</p>
+        </button>
       </div>
     </div>
   );
