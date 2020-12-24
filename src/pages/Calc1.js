@@ -30,6 +30,8 @@ export default function Calc1() {
               answer3={question.answer3}
               answer4={question.answer4}
               correct={question.correct}
+              input={question.input}
+              inputAnswer={question.inputAnswer}
             />
           );
         })}
