@@ -1,0 +1,253 @@
+[
+  {
+    "Number": 1,
+    "Question": "images/Calc3Q1.svg",
+    "answer1": "images/Calc3Q1A.svg",
+    "answer2": "images/Calc3Q1A.svg",
+    "answer3": "images/Calc3Q1A.svg",
+    "answer4": "images/Calc3Q1A.svg",
+    "correct": "A",
+    "hint": "",
+    "input": false
+  },
+  {
+    "Number": 2,
+    "Question": "images/Calc3Q2.svg",
+    "answer1": "images/Calc3Q2A.svg",
+    "answer2": "images/Calc3Q2B.svg",
+    "answer3": "images/Calc3Q2C.svg",
+    "answer4": "images/Calc3Q2D.svg",
+    "correct": "C",
+    "hint": "Fundamental theorem of calculus",
+    "input": false
+  },
+  {
+    "Number": 3,
+    "Question": "images/Calc3Q3.svg",
+    "answer1": "images/Calc3Q3A.svg",
+    "answer2": "images/Calc3Q3B.svg",
+    "answer3": "images/Calc3Q3C.svg",
+    "answer4": "images/Calc3Q3D.svg",
+    "correct": "B",
+    "hint": "",
+    "input": false
+  },
+  {
+    "Number": 4,
+    "Question": "images/Calc3Q4.svg",
+    "answer1": "images/Calc3Q4A.svg",
+    "answer2": "images/Calc3Q4B.svg",
+    "answer3": "images/Calc3Q4C.svg",
+    "answer4": "images/Calc3Q4D.svg",
+    "correct": "C",
+    "hint": "",
+    "input": false
+  },
+  {
+    "Number": 5,
+    "Question": "images/Calc3Q5.svg",
+    "answer1": "images/Calc3Q5A.svg",
+    "answer2": "images/Calc3Q5B.svg",
+    "answer3": "images/Calc3Q5C.svg",
+    "answer4": "images/Calc3Q5D.svg",
+    "correct": "D",
+    "hint": "",
+    "input": false
+  },
+  {
+    "Number": 6,
+    "Question": "images/Calc3Q6.svg",
+    "answer1": "images/Calc3Q6A.svg",
+    "answer2": "images/Calc3Q6B.svg",
+    "answer3": "images/Calc3Q6C.svg",
+    "answer4": "images/Calc3Q6D.svg",
+    "correct": "A",
+    "hint": "",
+    "input": false
+  },
+  {
+    "Number": 7,
+    "Question": "images/Calc3Q7.svg",
+    "answer1": "images/Calc3Q7A.svg",
+    "answer2": "images/Calc3Q7B.svg",
+    "answer3": "images/Calc3Q7C.svg",
+    "answer4": "images/Calc3Q7D.svg",
+    "correct": "C",
+    "hint": "",
+    "input": false
+  },
+  {
+    "Number": 8,
+    "Question": "images/Calc3Q8.svg",
+    "answer1": "images/Calc3Q8A.svg",
+    "answer2": "images/Calc3Q8B.svg",
+    "answer3": "images/Calc3Q8C.svg",
+    "answer4": "images/Calc3Q8D.svg",
+    "correct": "B",
+    "hint": "",
+    "input": false
+  },
+  {
+    "Number": 9,
+    "Question": "images/Calc3Q9.svg",
+    "answer1": "images/Calc3Q9A.svg",
+    "answer2": "images/Calc3Q9B.svg",
+    "answer3": "images/Calc3Q9C.svg",
+    "answer4": "images/Calc3Q9D.svg",
+    "correct": "B",
+    "hint": "",
+    "input": false
+  },
+  {
+    "Number": 10,
+    "Question": "images/Calc3Q10.svg",
+    "answer1": "images/Calc3Q10A.svg",
+    "answer2": "images/Calc3Q10B.svg",
+    "answer3": "images/Calc3Q10C.svg",
+    "answer4": "images/Calc3Q10D.svg",
+    "correct": "A",
+    "hint": "",
+    "input": false
+  },
+  {
+    "Number": 11,
+    "Question": "images/Calc3Q11.svg",
+    "answer1": "images/Calc3Q11A.svg",
+    "answer2": "images/Calc3Q11B.svg",
+    "answer3": "images/Calc3Q11C.svg",
+    "answer4": "images/Calc3Q11D.svg",
+    "correct": "C",
+    "hint": "Use V-Substitution",
+    "input": false
+  },
+  {
+    "Number": 12,
+    "Question": "images/Calc3Q12.svg",
+    "answer1": "images/Calc3Q12A.svg",
+    "answer2": "images/Calc3Q12B.svg",
+    "answer3": "images/Calc3Q12C.svg",
+    "answer4": "images/Calc3Q12D.svg",
+    "correct": "B",
+    "hint": "Use u-Substitution",
+    "input": false
+  },
+  {
+    "Number": 13,
+    "Question": "images/Calc3Q13.svg",
+    "answer1": "images/Calc3Q13A.svg",
+    "answer2": "images/Calc3Q13B.svg",
+    "answer3": "images/Calc3Q13C.svg",
+    "answer4": "images/Calc3Q13D.svg",
+    "correct": "D",
+    "hint": "Use polynomial division",
+    "input": false
+  },
+  {
+    "Number": 14,
+    "Question": "images/Calc3Q14.svg",
+    "answer1": "images/Calc3Q14A.svg",
+    "answer2": "images/Calc3Q14B.svg",
+    "answer3": "images/Calc3Q14C.svg",
+    "answer4": "images/diverge.svg",
+    "correct": "D",
+    "hint": "Improper integral",
+    "input": false
+  },
+  {
+    "Number": 15,
+    "Question": "images/Calc3Q15.svg",
+    "answer1": "images/Calc3Q15A.svg",
+    "answer2": "images/Calc3Q15B.svg",
+    "answer3": "images/Calc3Q15C.svg",
+    "answer4": "images/Calc3Q15D.svg",
+    "correct": "B",
+    "hint": "integration by parts",
+    "input": false
+  },
+  {
+    "Number": 16,
+    "Question": "images/Calc3Q16.svg",
+    "answer1": "images/Calc3Q16A.svg",
+    "answer2": "images/Calc3Q16B.svg",
+    "answer3": "images/0.svg",
+    "answer4": "images/diverge.svg",
+    "correct": "D",
+    "hint": "Improper integral",
+    "input": false
+  },
+  {
+    "Number": 17,
+    "Question": "images/Calc3Q17.svg",
+    "answer1": "images/Calc3Q17A.svg",
+    "answer2": "images/Calc3Q17B.svg",
+    "answer3": "images/Calc3Q17C.svg",
+    "answer4": "images/Calc3Q17D.svg",
+    "correct": "A",
+    "input": false
+  },
+  {
+    "Number": 18,
+    "Question": "images/Calc3Q18.png",
+    "answer1": "images/Calc3Q18A.svg",
+    "answer2": "images/Calc3Q18B.svg",
+    "answer3": "images/Calc3Q18C.svg",
+    "answer4": "images/Calc3Q18D.svg",
+    "correct": "C",
+    "input": false
+  },
+  {
+    "Number": 19,
+    "Question": "images/Calc3Q19.png",
+    "answer1": "images/Calc3Q19A.svg",
+    "answer2": "images/Calc3Q19B.svg",
+    "answer3": "images/Calc3Q19C.svg",
+    "answer4": "images/Calc3Q19D.svg",
+    "correct": "A",
+    "input": false
+  },
+  {
+    "Number": 20,
+    "Question": "images/Calc3Q20.png",
+    "answer1": "images/Calc3Q20A.svg",
+    "answer2": "images/Calc3Q20B.svg",
+    "answer3": "images/three.svg",
+    "answer4": "images/Calc3Q20D.svg",
+    "correct": "A",
+    "input": false
+  },
+
+  {
+    "Number": 21,
+    "Question": "images/Calc3Q21.svg",
+    "input": true,
+    "inputAnswer": "1"
+  },
+
+  {
+    "Number": 22,
+    "Question": "images/Calc3Q22.svg",
+    "input": true,
+    "inputAnswer": "16/3"
+  },
+
+  {
+    "Number": 23,
+    "Question": "images/Calc3Q23.svg",
+    "input": true,
+    "inputAnswer": "3/2"
+  },
+
+  {
+    "Number": 24,
+    "Question": "images/Calc3Q24.svg",
+    "input": true,
+    "hint": "Fundamental theorem of calculus",
+    "inputAnswer": "2"
+  },
+  {
+    "Number": 25,
+    "Question": "images/Calc3Q25.svg",
+    "input": true,
+    "inputAnswer": "9"
+  }
+]

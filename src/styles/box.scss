@@ -60,13 +60,13 @@ $secondary: #000000;
     border-radius: 10px;
     transition: 300ms;
     height: 60px;
-    width: 100px;
+    width: 50px;
     // padding-left: 10px;
     // padding-right: 10px;
   }
   .LargeButton {
-    width: 250px;
-    height: 80px;
+    width: 200px;
+    height: 70px;
   }
   .buttonQuestion:active {
     transform: scale(0.8);
@@ -172,6 +172,9 @@ $secondary: #000000;
 }
 .boxTop {
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .submitButton {
   border: 2px solid black;
@@ -188,6 +191,8 @@ $secondary: #000000;
 }
 .inputBox {
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .incorrect {
@@ -196,15 +201,26 @@ $secondary: #000000;
 .correct {
   color: green;
 }
+.questionBox {
+  display: flex;
+  justify-content: center;
+  .questionImg {
+    height: auto;
+    width: auto;
+    margin-bottom: 10px;
+  }
+}
 
 .InputField {
   width: 100px;
   padding: 5px;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 .InputField:focus {
-  border: 1px solid black;
+  border: 2px solid rgba(82, 82, 244, 0.5);
   outline: none;
+  -webkit-box-shadow: 0px 2px 26px -5px rgba(82, 82, 244, 0.5);
+  box-shadow: 0px 2px 26px -5px rgba(82, 82, 244, 0.5);
 }
 .clearQuestions {
   border: 2px solid black;

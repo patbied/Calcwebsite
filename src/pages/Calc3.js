@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 import '../styles/calc.scss';
 import '../styles/box.scss';
 import Question from '../template/QuestionLarge';
-import Questions from '../jsonFiles/calc1.json';
-import react from 'react';
+import Questions from '../jsonFiles/calc3.json';
 
-export default function Calc1() {
+export default function Calc3() {
   function clearQs() {
     Object.keys(localStorage).forEach((key) => {
-      if (key.substring(0, 12) == 'images/Calc1') {
+      if (key.substring(0, 12) == 'images/Calc3') {
         localStorage.removeItem(key);
       }
     });

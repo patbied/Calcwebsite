@@ -34,9 +34,7 @@
     "answer2": "images/neg5.svg",
     "answer3": "images/fifteen.svg",
     "answer4": "images/undef.svg",
-    "correct": "A",
-    "input": true,
-    "inputAnswer": "10"
+    "correct": "A"
   },
   {
     "Number": 5,
@@ -45,8 +43,7 @@
     "answer2": "images/sqrt(2).svg",
     "answer3": "images/1div4.svg",
     "answer4": "images/undef.svg",
-    "input": true,
-    "inputAnswer": "1/4"
+    "correct": "C"
   },
   {
     "Number": 6,
@@ -73,9 +70,7 @@
     "answer2": "images/inft.svg",
     "answer3": "images/0.svg",
     "answer4": "images/undef.svg",
-    "correct": "C",
-    "input": true,
-    "inputAnswer": "0"
+    "correct": "C"
   },
   {
     "Number": 9,
@@ -93,9 +88,7 @@
     "answer2": "images/5div7.svg",
     "answer3": "images/inft.svg",
     "answer4": "images/undef.svg",
-    "correct": "B",
-    "input": true,
-    "inputAnswer": "5/7"
+    "correct": "B"
   },
   {
     "Number": 11,
@@ -122,9 +115,7 @@
     "answer2": "images/one.svg",
     "answer3": "images/inft.svg",
     "answer4": "images/undef.svg",
-    "correct": "B",
-    "input": true,
-    "inputAnswer": "1"
+    "correct": "B"
   },
   {
     "Number": 14,
@@ -151,9 +142,7 @@
     "answer2": "images/1div6.svg",
     "answer3": "images/inft.svg",
     "answer4": "images/undef.svg",
-    "correct": "B",
-    "input": true,
-    "inputAnswer": "1/6"
+    "correct": "B"
   },
   {
     "Number": 17,

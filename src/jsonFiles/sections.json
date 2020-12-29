@@ -10,17 +10,15 @@
     "id": 2,
     "name": "Differentiation",
     "desc": "This is better for fwadnawndiawuudj9696969",
-    "difficulty": "3",
-    "amount": "20",
+    "amount": "10",
     "direction": "/calc2"
   },
   {
     "id": 3,
     "name": "Integration",
     "desc": "DWAODNAWBDOUWABUO",
-    "difficulty": "5",
-    "amount": "23",
-    "direction": "/calc1"
+    "amount": "25",
+    "direction": "/calc3"
   },
   {
     "id": 4,

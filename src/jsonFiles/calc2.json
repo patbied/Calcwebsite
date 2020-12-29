@@ -46,9 +46,14 @@
   {
     "Number": 5,
     "Question": "images/Calc2Q5.svg",
+    "answer1": "images/20.svg",
+    "answer2": "images/5Div4.svg",
+    "answer3": "images/5Div2.svg",
+    "answer4": "images/four.svg",
+    "correct": "C",
     "hint": "",
-    "input": true,
-    "inputAnswer": "5/2"
+    "input": false,
+    "numericalAnswer": ""
   },
   {
     "Number": 6,

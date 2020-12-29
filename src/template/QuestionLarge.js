@@ -20,44 +20,43 @@ export default function Question(props) {
   const [Answer, setAnswer] = useState('');
   //fetch the users answer from local sotrage and store it in a variable
   const answer = localStorage.getItem(props.question);
+
   useEffect(() => {
-    if (props.input === false) {
-      if (answer === 'A') {
-        if ('A' === props.correct) {
-          setCorrect1(true);
-        } else {
-          setIncorrect1(true);
-        }
-      } else if (answer === 'B') {
-        if ('B' === props.correct) {
-          setCorrect2(true);
-        } else {
-          setIncorrect2(true);
-        }
-      } else if (answer === 'C') {
-        if ('C' === props.correct) {
-          setCorrect3(true);
-        } else {
-          setIncorrect3(true);
-        }
-      } else if (answer === 'D') {
-        if ('D' === props.correct) {
-          setCorrect4(true);
-        } else {
-          setIncorrect4(true);
-        }
+    if (answer === 'A') {
+      if ('A' === props.correct) {
+        setCorrect1(true);
+      } else {
+        setIncorrect1(true);
       }
-    } else {
-      if (answer === props.inputAnswer) {
-        setCorrect(true);
+    } else if (answer === 'B') {
+      if ('B' === props.correct) {
+        setCorrect2(true);
+      } else {
+        setIncorrect2(true);
+      }
+    } else if (answer === 'C') {
+      if ('C' === props.correct) {
+        setCorrect3(true);
+      } else {
+        setIncorrect3(true);
+      }
+    } else if (answer === 'D') {
+      if ('D' === props.correct) {
+        setCorrect4(true);
+      } else {
+        setIncorrect4(true);
+      }
+    }
+
+    if (answer === props.inputAnswer) {
+      setCorrect(true);
+      setAnswer(answer);
+    } else if (answer != props.inputAnswer) {
+      if (answer) {
+        setIncorrect(true);
         setAnswer(answer);
-      } else if (answer != props.inputAnswer) {
-        if (answer) {
-          setIncorrect(true);
-          setAnswer(answer);
-        } else {
-          return null;
-        }
+      } else {
+        return null;
       }
     }
   }, []);
@@ -67,8 +66,18 @@ export default function Question(props) {
     <div className="boxContent  Large boxContentQuestion">
       <div className="boxTop">
         <h2 style={{ display: 'inline' }}>
-          {props.number}. {correct ? 'correct' : ''}
-          {incorrect ? 'incorrect' : ''}
+          {props.number}.
+          {() => {
+            if (props.input) {
+              if (correct) {
+                return 'correct';
+              } else if (incorrect) {
+                return 'incorrect';
+              } else {
+                return '';
+              }
+            }
+          }}
         </h2>
 
         <p
@@ -85,16 +94,13 @@ export default function Question(props) {
           props.hint ? `${props.hint}` : 'no hint'
         }`}</p>
       </div>
-      <img
-        src={props.question}
-        alt="For some reason this question did not load properly :/"
-        style={{
-          scale: '1.2',
-          display: 'block',
-          overflow: 'scroll',
-          maxHeight: '200px',
-        }}
-      ></img>
+      <div className="questionBox">
+        <img
+          className="questionImg"
+          src={props.question}
+          alt="For some reason this question did not load properly :/"
+        ></img>
+      </div>
       {props.input ? (
         <div className="inputBox">
           {answer ? (
@@ -114,9 +120,11 @@ export default function Question(props) {
                 type="text"
                 id="answerText"
                 name="answerText"
+                autoComplete="off"
                 onChange={(event) => setAnswer(event.target.value)}
               ></input>
               <button
+                style={{}}
                 onClick={() => {
                   if (Answer === props.inputAnswer) {
                     console.log(props.inputAnswer);

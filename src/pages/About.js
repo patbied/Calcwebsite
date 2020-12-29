@@ -1,20 +1,30 @@
 import React from 'react';
 import '../styles/about.scss';
 export default function About() {
-  const todo = [' Finish all the sections', 'Add hints', 'Fix darkmode'];
+  const todo = [
+    ' Finish all the sections',
+    'disable buttons after answered',
+    'Fix darkmode',
+    'hide hints when there are none',
+    '',
+  ];
   return (
     <div className="aboutContainer">
       <h1 style={{ textAlign: 'center' }}>What is this website?</h1>
       <p className="text">
         This website is made in the goal of helping people learn Calculus. This
         project was started for fun to help
-        <a target="_blank" href="https://github.com/patbied?tab=repositories">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/patbied?tab=repositories"
+        >
           {' '}
           <span className="linked">me</span>{' '}
         </a>
         develop my programming skills in react. All the questions and answer are
         provided by
-        <a target="_blank" className="linked" href="/">
+        <a target="_blank" rel="noreferrer" className="linked" href="/">
           <span className="linked"> Mateusz</span>
         </a>
       </p>
@@ -41,7 +51,6 @@ export default function About() {
           </ol>
         </div>
       </div>
-      {/* End form for suggestions/bugs */}
     </div>
   );
 }
