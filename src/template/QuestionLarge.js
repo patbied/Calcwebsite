@@ -65,27 +65,14 @@ export default function Question(props) {
   return (
     <div className="boxContent  Large boxContentQuestion">
       <div className="boxTop">
-        <h2 style={{ display: 'inline' }}>
-          {props.number}.
-          {() => {
-            if (props.input) {
-              if (correct) {
-                return 'correct';
-              } else if (incorrect) {
-                return 'incorrect';
-              } else {
-                return '';
-              }
-            }
-          }}
-        </h2>
+        <h2 style={{ display: 'inline' }}>{props.number}.</h2>
 
         <p
           onClick={() => {
             openHint(!hint);
             console.log(hint);
           }}
-          className="hint"
+          className={` ${props.hint ? 'hint' : 'noHint'}`}
         >
           Hint
         </p>
@@ -175,7 +162,9 @@ export default function Question(props) {
               }}
               className={`boxP buttonQuestion LargeButton ${
                 correct1 ? 'correctButton' : ''
-              } ${incorrect1 ? 'incorrectButton' : ''}`}
+              } ${incorrect1 ? 'incorrectButton' : ''} ${
+                answer ? 'disabledInput' : ''
+              } `}
             >
               <img
                 alt="For some reason this question did not load properly :/"
@@ -211,7 +200,9 @@ export default function Question(props) {
               }}
               className={`boxP buttonQuestion LargeButton ${
                 correct2 ? 'correctButton' : ''
-              } ${incorrect2 ? 'incorrectButton' : ''} `}
+              } ${incorrect2 ? 'incorrectButton' : ''} ${
+                answer ? 'disabledInput' : ''
+              }`}
             >
               <img
                 alt="For some reason this question did not load properly :/"
@@ -247,7 +238,9 @@ export default function Question(props) {
               }}
               className={`boxP buttonQuestion LargeButton ${
                 correct3 ? 'correctButton' : ''
-              } ${incorrect3 ? 'incorrectButton' : ''}`}
+              } ${incorrect3 ? 'incorrectButton' : ''}${
+                answer ? 'disabledInput' : ''
+              }`}
             >
               <img
                 alt="For some reason this question did not load properly :/"
@@ -283,7 +276,9 @@ export default function Question(props) {
               }}
               className={`boxP buttonQuestion LargeButton ${
                 correct4 ? 'correctButton' : ''
-              } ${incorrect4 ? 'incorrectButton' : ''}`}
+              } ${incorrect4 ? 'incorrectButton' : ''} ${
+                answer ? 'disabledInput' : ''
+              }`}
             >
               <img
                 alt="For some reason this question did not load properly :/"
@@ -305,13 +300,10 @@ export default function Question(props) {
             Explanation
           </p>
           <div className={`explanation ${explanation ? 'opened' : ''}`}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
+            <img
+              alt="For some reason this explanation did not load properly :/"
+              src="{props.explanation}"
+            ></img>
           </div>
         </div>
       ) : (

@@ -6,6 +6,7 @@ import Navbar from './pages/Navbar';
 import Calc1 from './pages/Calc1';
 import Calc2 from './pages/Calc2';
 import Calc3 from './pages/Calc3';
+import Calc4 from './pages/Calc4';
 import './styles/all.scss';
 export default function App() {
   const [darkmode, setDarkmode] = useState(true);
@@ -41,6 +42,12 @@ export default function App() {
           darkmode={darkmode}
           exact
           component={Calc3}
+        ></Route>
+        <Route
+          path="/calc4"
+          darkmode={darkmode}
+          exact
+          component={Calc4}
         ></Route>
       </Switch>
     </Router>

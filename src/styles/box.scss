@@ -117,7 +117,8 @@ $secondary: #000000;
 }
 @media screen and (max-width: 950px) {
   .boxContent {
-    width: 50%;
+    width: 40%;
+    height: 200px;
   }
 }
 @media screen and (max-width: 650px) {
@@ -152,6 +153,9 @@ $secondary: #000000;
 }
 .hint:hover {
   color: rgb(82, 82, 244);
+}
+.noHint {
+  display: none;
 }
 .clue:hover {
   color: black;
@@ -270,4 +274,7 @@ $secondary: #000000;
 }
 .clearQuestions:focus {
   outline: 0;
+}
+.disabledInput {
+  pointer-events: none !important;
 }
