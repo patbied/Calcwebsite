@@ -14,9 +14,7 @@
 .linked:visited {
   color: rgb(21, 21, 149);
 }
-li {
-  font-size: 20px;
-}
+
 .aboutContainer {
   background-color: white;
   border-radius: 10px;
@@ -31,9 +29,23 @@ li {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  li {
+    font-size: 20px;
+    text-decoration: underline 2px solid rgba(82, 82, 244, 0.5);
+  }
   @media screen and (max-width: 900px) {
     .form {
       display: none;
     }
+  }
+  @media screen and (max-width: 550px) {
+    li {
+      font-size: 15px;
+    }
+  }
+}
+.todo {
+  ol {
+    list-style-position: inside;
   }
 }

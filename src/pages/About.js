@@ -1,12 +1,12 @@
 import React from 'react';
 import '../styles/about.scss';
+import '../styles/all.scss';
 export default function About() {
   const todo = [
-    ' Finish all the sections',
-    'disable buttons after answered',
-    'Fix darkmode',
-    'hide hints when there are none',
-    '',
+    'Finish all the sections',
+    'Fix darkmode (Resets back to lightmode on refresh/Make it nicer)',
+    'Fix some questions being too small on mobile',
+    'Disable input button when no answer or incorrect format',
   ];
   return (
     <div className="aboutContainer">

@@ -1,0 +1,243 @@
+[
+  {
+    "Number": 1,
+    "Question": "images/Calc5Q1.svg",
+    "answer1": "images/Calc5Q1A.svg",
+    "answer2": "images/Calc5Q1B.svg",
+    "answer3": "images/Calc5Q1C.svg",
+    "answer4": "images/Calc5Q1D.svg",
+    "correct": "A"
+  },
+  {
+    "Number": 2,
+    "Question": "images/Calc5Q2.svg",
+    "answer1": "images/one.svg",
+    "answer2": "images/two.svg",
+    "answer3": "images/three.svg",
+    "answer4": "images/four.svg",
+    "explanation": "images/Calc5Q2E.svg",
+    "correct": "B"
+  },
+  {
+    "Number": 3,
+    "Question": "images/Calc5Q3.svg",
+    "answer1": "images/Calc5Q3A.svg",
+    "answer2": "images/Calc5Q3B.svg",
+    "answer3": "images/Calc5Q3C.svg",
+    "answer4": "images/Calc5Q3D.svg",
+    "correct": "C"
+  },
+  {
+    "Number": 4,
+    "Question": "images/Calc5Q4.svg",
+    "TrueOrFalse": true,
+    "correct": true,
+    "explanation": "images/Calc5Q4E.svg"
+  },
+  {
+    "Number": 5,
+    "Question": "images/Calc5Q5.svg",
+    "TrueOrFalse": true,
+    "correct": false,
+    "explanation": "images/Calc5Q5E.svg"
+  },
+  {
+    "Number": 6,
+    "Question": "images/Calc5Q6.svg",
+    "answer1": "images/Calc5Q6A.svg",
+    "answer2": "images/Calc5Q6B.svg",
+    "answer3": "images/Calc5Q6C.svg",
+    "answer4": "images/Calc5Q6D.svg",
+    "correct": "A",
+    "explanation": "images/Calc5Q6E.svg",
+    "hint": ""
+  },
+  {
+    "Number": 7,
+    "Question": "images/Calc5Q7.svg",
+    "answer1": "images/Calc5Q7A.svg",
+    "answer2": "images/Calc5Q7B.svg",
+    "answer3": "images/Calc5Q7C.svg",
+    "answer4": "images/Calc5Q7D.svg",
+    "correct": "D",
+    "explanation": "images/Calc5Q7E.svg",
+    "hint": "",
+    "input": false
+  },
+  {
+    "Number": 8,
+    "Question": "images/Calc5Q8.svg",
+    "answer1": "images/Calc5Q8A.svg",
+    "answer2": "images/Calc5Q8B.svg",
+    "answer3": "images/Calc5Q8C.svg",
+    "answer4": "images/Calc5Q8D.svg",
+    "correct": "C",
+    "explanation": "images/Calc5Q8E.svg",
+    "hint": "",
+    "input": false
+  },
+  {
+    "Number": 9,
+    "Question": "images/Calc5Q9.svg",
+    "answer1": "images/Calc5Q9A.svg",
+    "answer2": "images/Calc5Q9B.svg",
+    "answer3": "images/Calc5Q9C.svg",
+    "answer4": "images/Calc5Q9D.svg",
+    "explanation": "images/Calc5Q9E.svg",
+    "correct": "A",
+    "hint": "",
+    "input": false
+  },
+  {
+    "Number": 10,
+    "Question": "images/Calc5Q10.svg",
+    "answer1": "images/Calc5Q10A.svg",
+    "answer2": "images/Calc5Q10B.svg",
+    "answer3": "images/Calc5Q10C.svg",
+    "answer4": "images/Calc5Q10D.svg",
+    "correct": "B",
+    "hint": "",
+    "input": false
+  },
+  {
+    "Number": 11,
+    "Question": "images/Calc5Q11.svg",
+    "answer1": "images/Calc5Q11A.svg",
+    "answer2": "images/Calc5Q11B.svg",
+    "answer3": "images/Calc5Q11C.svg",
+    "answer4": "images/Calc5Q11D.svg",
+    "correct": "D",
+    "largerButton": true,
+    "input": false
+  },
+  {
+    "Number": 12,
+    "Question": "images/Calc5Q12.svg",
+    "answer1": "images/Calc5Q12A.svg",
+    "answer2": "images/Calc5Q12B.svg",
+    "answer3": "images/Calc5Q12C.svg",
+    "answer4": "images/Calc5Q12D.svg",
+    "correct": "B",
+    "input": false
+  },
+  {
+    "Number": 13,
+    "Question": "images/Calc5Q13.svg",
+    "answer1": "images/Calc5Q13A.svg",
+    "answer2": "images/Calc5Q13B.svg",
+    "answer3": "images/Calc5Q13C.svg",
+    "answer4": "images/Calc5Q13D.svg",
+    "correct": "B",
+    "input": false
+  },
+  {
+    "Number": 14,
+    "Question": "images/Calc5Q14.svg",
+    "answer1": "images/Calc5Q14A.svg",
+    "answer2": "images/Calc5Q14B.svg",
+    "answer3": "images/Calc5Q14C.svg",
+    "answer4": "images/Calc5Q14D.svg",
+    "explanation": "images/Calc5Q14E.svg",
+    "correct": "B",
+    "input": false
+  },
+  {
+    "Number": 15,
+    "Question": "images/Calc5Q15.svg",
+    "answer1": "images/Calc5Q15A.svg",
+    "answer2": "images/Calc5Q15B.svg",
+    "answer3": "images/Calc5Q15C.svg",
+    "answer4": "images/Calc5Q15D.svg",
+    "correct": "D",
+    "explanation": "images/Calc5Q15E.svg"
+  },
+  {
+    "Number": 16,
+    "Question": "images/Calc5Q16.svg",
+    "answer1": "images/Calc5Q16A.svg",
+    "answer2": "images/Calc5Q16B.svg",
+    "answer3": "images/Calc5Q16C.svg",
+    "answer4": "images/Calc5Q16D.svg",
+    "correct": "D",
+    "hint": "disk method",
+    "input": false
+  },
+  {
+    "Number": 17,
+    "Question": "images/Calc5Q17.svg",
+    "answer1": "images/Calc5Q17A.svg",
+    "answer2": "images/Calc5Q17B.svg",
+    "answer3": "images/Calc5Q17C.svg",
+    "answer4": "images/Calc5Q17D.svg",
+    "correct": "A",
+    "hint": "disk method",
+    "input": false
+  },
+  {
+    "Number": 18,
+    "Question": "images/Calc5Q18.svg",
+    "answer1": "images/Calc5Q18A.svg",
+    "answer2": "images/Calc5Q18B.svg",
+    "answer3": "images/Calc5Q18C.svg",
+    "answer4": "images/Calc5Q18D.svg",
+    "correct": "D",
+    "hint": "washer method",
+    "explanation": "images/Calc5Q18e.svg",
+    "input": false
+  },
+  {
+    "Number": 19,
+    "Question": "images/Calc5Q19.png",
+    "answer1": "images/Calc5Q19A.svg",
+    "answer2": "images/Calc5Q19B.svg",
+    "answer3": "images/Calc5Q19C.svg",
+    "answer4": "images/Calc5Q19D.svg",
+    "correct": "A",
+    "hint": "washer method",
+    "input": false
+  },
+  {
+    "Number": 20,
+    "Question": "images/Calc5Q20.svg",
+    "answer1": "images/Calc5Q20A.svg",
+    "answer2": "images/Calc5Q20B.svg",
+    "answer3": "images/three.svg",
+    "answer4": "images/Calc5Q20D.svg",
+    "correct": "A",
+    "input": false
+  },
+
+  {
+    "Number": 21,
+    "Question": "images/Calc5Q21.svg",
+    "input": true,
+    "inputAnswer": "1"
+  },
+
+  {
+    "Number": 22,
+    "Question": "images/Calc5Q22.svg",
+    "input": true,
+    "inputAnswer": "16/3"
+  },
+
+  {
+    "Number": 23,
+    "Question": "images/Calc5Q23.svg",
+    "input": true,
+    "inputAnswer": "3/2"
+  },
+
+  {
+    "Number": 24,
+    "Question": "images/Calc5Q24.svg",
+    "input": true,
+    "inputAnswer": "2"
+  },
+  {
+    "Number": 25,
+    "Question": "images/Calc5Q25.svg",
+    "input": true,
+    "inputAnswer": "9"
+  }
+]

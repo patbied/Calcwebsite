@@ -227,14 +227,17 @@
     "Number": 22,
     "Question": "images/Calc3Q22.svg",
     "input": true,
-    "inputAnswer": "16/3"
+    "inputAnswer": "16/3",
+    "inputAnswer2": "5.33",
+    "inputAnswer3": "5.3"
   },
 
   {
     "Number": 23,
     "Question": "images/Calc3Q23.svg",
     "input": true,
-    "inputAnswer": "3/2"
+    "inputAnswer": "3/2",
+    "inputAnswer2": "1.5"
   },
 
   {

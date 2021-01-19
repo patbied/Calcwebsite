@@ -1,8 +1,20 @@
 $primary: #45b9e7;
 $secondary: #000000;
+$next: rgba(82, 82, 244, 0.5);
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+}
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: $next;
+}
+
+::selection {
+  color: white;
+  background: $next;
 }

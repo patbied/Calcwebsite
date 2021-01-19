@@ -68,6 +68,11 @@ $secondary: #000000;
     width: 200px;
     height: 70px;
   }
+  .Larger {
+    img {
+      max-width: 150px;
+    }
+  }
   .buttonQuestion:active {
     transform: scale(0.8);
   }
@@ -118,7 +123,6 @@ $secondary: #000000;
 @media screen and (max-width: 950px) {
   .boxContent {
     width: 40%;
-    height: 200px;
   }
 }
 @media screen and (max-width: 650px) {
@@ -143,7 +147,8 @@ $secondary: #000000;
   margin-left: 3px;
 }
 .explanation.opened {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin-top: 10px;
 }
 .hint {
@@ -189,9 +194,18 @@ $secondary: #000000;
   z-index: 10;
   cursor: pointer;
 }
+.submitButton.invalid {
+  pointer-events: none;
+}
 .submitButton:focus {
   border: 2px solid black;
   outline: none;
+}
+.submitButton:active {
+  background-color: rgba(82, 82, 244, 0.5);
+  color: white;
+  -webkit-box-shadow: 0px 2px 26px -5px rgba(82, 82, 244, 1);
+  box-shadow: 0px 2px 26px -5px rgba(82, 82, 244, 1);
 }
 .inputBox {
   margin-top: 10px;
@@ -208,10 +222,16 @@ $secondary: #000000;
 .questionBox {
   display: flex;
   justify-content: center;
-  .questionImg {
-    height: auto;
-    width: auto;
-    margin-bottom: 10px;
+  @media screen and (min-width: 1001px) {
+    img {
+      max-width: 500px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    img {
+      max-width: 300px;
+    }
   }
 }
 
@@ -226,6 +246,7 @@ $secondary: #000000;
   -webkit-box-shadow: 0px 2px 26px -5px rgba(82, 82, 244, 0.5);
   box-shadow: 0px 2px 26px -5px rgba(82, 82, 244, 0.5);
 }
+
 .clearQuestions {
   border: 2px solid black;
   padding: 20px;

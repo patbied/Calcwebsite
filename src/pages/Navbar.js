@@ -3,7 +3,6 @@ import '../styles/navbar.scss';
 import Moon from '../srcImg/moon.svg';
 import Sun from '../srcImg/sun.svg';
 import SVG from 'react-inlinesvg';
-import { useSpring, animated } from 'react-spring';
 export default function Navbar(props) {
   const [mobile, setMobile] = useState(false);
   function toggleMobileNav() {

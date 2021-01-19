@@ -40,7 +40,7 @@
     "Question": "images/Calc4Q5.svg",
     "answer1": "images/Calc4Q5A.svg",
     "answer2": "images/Calc4Q5B.svg",
-    "answer3": "images/Calc4Q5C.svg",
+    "answer3": "images/one.svg",
     "answer4": "images/Calc4Q5D.svg",
     "correct": "A"
   },
@@ -51,9 +51,7 @@
     "answer2": "images/Calc4Q6B.svg",
     "answer3": "images/Calc4Q6C.svg",
     "answer4": "images/Calc4Q6D.svg",
-    "correct": "A",
-    "hint": "",
-    "input": false
+    "correct": "B"
   },
   {
     "Number": 7,
@@ -62,7 +60,8 @@
     "answer2": "images/Calc4Q7B.svg",
     "answer3": "images/Calc4Q7C.svg",
     "answer4": "images/Calc4Q7D.svg",
-    "correct": "C",
+    "correct": "B",
+    "explanation": "images/Calc4Q7E.svg",
     "hint": "",
     "input": false
   },
@@ -84,7 +83,8 @@
     "answer2": "images/Calc4Q9B.svg",
     "answer3": "images/Calc4Q9C.svg",
     "answer4": "images/Calc4Q9D.svg",
-    "correct": "B",
+    "explanation": "images/Calc4Q9E.svg",
+    "correct": "A",
     "hint": "",
     "input": false
   },
@@ -95,7 +95,7 @@
     "answer2": "images/Calc4Q10B.svg",
     "answer3": "images/Calc4Q10C.svg",
     "answer4": "images/Calc4Q10D.svg",
-    "correct": "A",
+    "correct": "B",
     "hint": "",
     "input": false
   },
@@ -106,8 +106,8 @@
     "answer2": "images/Calc4Q11B.svg",
     "answer3": "images/Calc4Q11C.svg",
     "answer4": "images/Calc4Q11D.svg",
-    "correct": "C",
-    "hint": "Use V-Substitution",
+    "correct": "D",
+    "largerButton": true,
     "input": false
   },
   {
@@ -118,7 +118,6 @@
     "answer3": "images/Calc4Q12C.svg",
     "answer4": "images/Calc4Q12D.svg",
     "correct": "B",
-    "hint": "Use u-Substitution",
     "input": false
   },
   {
@@ -128,8 +127,7 @@
     "answer2": "images/Calc4Q13B.svg",
     "answer3": "images/Calc4Q13C.svg",
     "answer4": "images/Calc4Q13D.svg",
-    "correct": "D",
-    "hint": "Use polynomial division",
+    "correct": "B",
     "input": false
   },
   {
@@ -138,9 +136,9 @@
     "answer1": "images/Calc4Q14A.svg",
     "answer2": "images/Calc4Q14B.svg",
     "answer3": "images/Calc4Q14C.svg",
-    "answer4": "images/diverge.svg",
-    "correct": "D",
-    "hint": "Improper integral",
+    "answer4": "images/Calc4Q14D.svg",
+    "explanation": "images/Calc4Q14E.svg",
+    "correct": "B",
     "input": false
   },
   {
@@ -150,19 +148,18 @@
     "answer2": "images/Calc4Q15B.svg",
     "answer3": "images/Calc4Q15C.svg",
     "answer4": "images/Calc4Q15D.svg",
-    "correct": "B",
-    "hint": "integration by parts",
-    "input": false
+    "correct": "D",
+    "explanation": "images/Calc4Q15E.svg"
   },
   {
     "Number": 16,
     "Question": "images/Calc4Q16.svg",
     "answer1": "images/Calc4Q16A.svg",
     "answer2": "images/Calc4Q16B.svg",
-    "answer3": "images/0.svg",
-    "answer4": "images/diverge.svg",
+    "answer3": "images/Calc4Q16C.svg",
+    "answer4": "images/Calc4Q16D.svg",
     "correct": "D",
-    "hint": "Improper integral",
+    "hint": "disk method",
     "input": false
   },
   {
@@ -173,16 +170,19 @@
     "answer3": "images/Calc4Q17C.svg",
     "answer4": "images/Calc4Q17D.svg",
     "correct": "A",
+    "hint": "disk method",
     "input": false
   },
   {
     "Number": 18,
-    "Question": "images/Calc4Q18.png",
+    "Question": "images/Calc4Q18.svg",
     "answer1": "images/Calc4Q18A.svg",
     "answer2": "images/Calc4Q18B.svg",
     "answer3": "images/Calc4Q18C.svg",
     "answer4": "images/Calc4Q18D.svg",
-    "correct": "C",
+    "correct": "D",
+    "hint": "washer method",
+    "explanation": "images/Calc4Q18e.svg",
     "input": false
   },
   {
@@ -193,16 +193,18 @@
     "answer3": "images/Calc4Q19C.svg",
     "answer4": "images/Calc4Q19D.svg",
     "correct": "A",
+    "hint": "washer method",
     "input": false
   },
   {
     "Number": 20,
-    "Question": "images/Calc4Q20.png",
+    "Question": "images/Calc4Q20.svg",
     "answer1": "images/Calc4Q20A.svg",
     "answer2": "images/Calc4Q20B.svg",
     "answer3": "images/three.svg",
     "answer4": "images/Calc4Q20D.svg",
-    "correct": "A",
+    "correct": "D",
+    "explanation": "images/Calc4Q20E.svg",
     "input": false
   },
 
@@ -210,14 +212,16 @@
     "Number": 21,
     "Question": "images/Calc4Q21.svg",
     "input": true,
-    "inputAnswer": "1"
+    "inputAnswer": "-6",
+    "explanation": "images/Calc4Q21E.svg"
   },
 
   {
     "Number": 22,
     "Question": "images/Calc4Q22.svg",
     "input": true,
-    "inputAnswer": "16/3"
+    "inputAnswer": "-2",
+    "explanation": "images/Calc4Q22E.svg"
   },
 
   {
@@ -231,7 +235,6 @@
     "Number": 24,
     "Question": "images/Calc4Q24.svg",
     "input": true,
-    "hint": "Fundamental theorem of calculus",
     "inputAnswer": "2"
   },
   {

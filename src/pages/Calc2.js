@@ -31,6 +31,8 @@ export default function Calc2() {
               correct={question.correct}
               input={question.input}
               inputAnswer={question.inputAnswer}
+              inputAnswer2={question.inputAnswer2}
+              inputAnswer3={question.inputAnswer2}
             />
           );
         })}
