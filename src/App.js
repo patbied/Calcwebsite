@@ -8,7 +8,6 @@ import Calc2 from './pages/Calc2';
 import Calc3 from './pages/Calc3';
 import Calc4 from './pages/Calc4';
 import Calc5 from './pages/Calc5';
-import themeContext from './themeContext.js';
 import './styles/all.scss';
 export default function App() {
   const [darkmode, setDarkmode] = useState(true);
@@ -20,40 +19,35 @@ export default function App() {
     <Router>
       <Navbar darkmode={darkmode} setDarkmode={setDarkmode} />
       <Switch>
-        <Route path="/" darkmode={darkmode} exact component={Home}></Route>
+        <Route path="/"  exact component={Home}></Route>
         <Route
           path="/about"
-          darkmode={darkmode}
           exact
           component={About}
         ></Route>
         <Route
           path="/calc1"
-          darkmode={darkmode}
           exact
           component={Calc1}
         ></Route>
         <Route
           path="/calc2"
-          darkmode={darkmode}
+    
           exact
           component={Calc2}
         ></Route>
         <Route
           path="/calc3"
-          darkmode={darkmode}
           exact
           component={Calc3}
         ></Route>
         <Route
           path="/calc4"
-          darkmode={darkmode}
           exact
           component={Calc4}
         ></Route>
         <Route
           path="/calc5"
-          darkmode={darkmode}
           exact
           component={Calc5}
         ></Route>

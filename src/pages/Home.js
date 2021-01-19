@@ -7,7 +7,7 @@ export default function Home(props) {
   return (
     <div>
       <div
-        className={`ContainerOfBoxes ${props.darkmodeSetting ? '' : 'dark'}`}
+        className={`ContainerOfBoxes `}
       >
         {Sections.map((section) => {
           return (
