@@ -17,7 +17,7 @@ export default function App() {
     : 'rgb(125, 125, 125)';
   return (
     <Router>
-      <Navbar darkmode={darkmode} setDarkmode={setDarkmode} />
+      <Navbar  />
       <Switch>
         <Route path="/"  exact component={Home}></Route>
         <Route

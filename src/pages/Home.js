@@ -2,8 +2,7 @@ import React from 'react';
 import Box from '../template/Box';
 import '../styles/box.scss';
 import Sections from '../jsonFiles/sections.json';
-export default function Home(props) {
-  // console.log(props.darkmode);
+export default function Home() {
   return (
     <div>
       <div
@@ -12,7 +11,7 @@ export default function Home(props) {
         {Sections.map((section) => {
           return (
             <Box
-              class={`${props.darkmode ? 'dark' : ''}`}
+              
               key={section.id}
               name={section.name}
               description={section.desc}

@@ -6,8 +6,7 @@
     "answer2": "images/six.svg",
     "answer3": "images/three.svg",
     "answer4": "images/undef.svg",
-    "correct": "B",
-    "hint": "This is some hint for the problem."
+    "correct": "B"
   },
   {
     "Number": 2,

@@ -11,7 +11,7 @@ export default function Navbar(props) {
 
   return (
     <div>
-      <header className={`${props.darkmode ? '' : 'dark'}`}>
+      <header >
         <div className="navBrand">
           <h2>
             <a href="/">Learn Calculus</a>
@@ -19,21 +19,7 @@ export default function Navbar(props) {
         </div>
 
         <div className="navLinks">
-          <span
-            className="navLink"
-            onClick={() => {
-              props.setDarkmode(!props.darkmode);
-              localStorage.setItem('darkmodeChoice', props.darkmode);
-            }}
-          >
-            <a>
-              {props.darkmode ? (
-                <img height="30px" width="30px" src={Moon}></img>
-              ) : (
-                <img height="30px" width="30px" src={Sun}></img>
-              )}
-            </a>
-          </span>
+     
           <span className="navLink">
             <a href="/">Home</a>
           </span>
