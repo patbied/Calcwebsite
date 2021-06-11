@@ -14,8 +14,8 @@ export default function Home() {
               
               key={section.id}
               name={section.name}
-              description={section.desc}
-              amount={section.amount}
+     
+         
               direction={section.direction}
             />
           );

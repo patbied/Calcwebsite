@@ -33,6 +33,7 @@ export default function Calc2() {
               inputAnswer={question.inputAnswer}
               inputAnswer2={question.inputAnswer2}
               inputAnswer3={question.inputAnswer2}
+              chooseAll={question.chooseAll}
             />
           );
         })}

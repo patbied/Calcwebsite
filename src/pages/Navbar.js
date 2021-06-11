@@ -11,7 +11,7 @@ export default function Navbar(props) {
 
   return (
     <div>
-      <header >
+      <header  >
         <div className="navBrand">
           <h2>
             <a href="/">Learn Calculus</a>
@@ -19,7 +19,7 @@ export default function Navbar(props) {
         </div>
 
         <div className="navLinks">
-     
+        
           <span className="navLink">
             <a href="/">Home</a>
           </span>

@@ -178,5 +178,45 @@
     "answer3": "images/NegInft.svg",
     "answer4": "images/undef.svg",
     "correct": "D"
+  },  {
+    "Number": 21,
+    "Question": "images/Calc1Q21.svg",
+    "input": true,
+    "inputAnswer": "-9",
+    "hint": "Direct substitution",
+    "explanation": "images/Calc1Q21E.svg"
+  },
+
+  {
+    "Number": 22,
+    "Question": "images/Calc1Q22.svg",
+    "input": true,
+    "inputAnswer": "2.5",
+    "inputAnswer2": "5/2",
+    "hint": "Factor"
+  },
+
+  {
+    "Number": 23,
+    "Question": "images/Calc1Q23.svg",
+    "input": true,
+    "inputAnswer": "0",
+    "explanation": "images/Calc1Q23E.svg"
+  },
+
+  {
+    "Number": 24,
+    "Question": "images/Calc1Q24.svg",
+    "input": true,
+    "inputAnswer": "2"
+  },
+  {
+    "Number": 25,
+    "Question": "images/Calc1Q25.svg",
+    "TrueOrFalse": true,
+    "correct": true,
+    "trueImage": "images/Calc1Q25T.svg",
+    "falseImage": "images/Calc1Q25F.svg"
+
   }
 ]

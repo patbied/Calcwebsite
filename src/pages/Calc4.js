@@ -35,6 +35,7 @@ export default function Calc4() {
               inputAnswer3={question.inputAnswer2}
               explanation={question.explanation}
               ButtonLG={question.largerButton}
+              chooseAll={question.chooseAll}
             />
           );
         })}

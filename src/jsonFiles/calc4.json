@@ -228,19 +228,24 @@
     "Number": 23,
     "Question": "images/Calc4Q23.svg",
     "input": true,
-    "inputAnswer": "3/2"
+    "inputAnswer": "12",
+    "explanation": "images/Calc4Q23E.svg"
   },
 
   {
     "Number": 24,
     "Question": "images/Calc4Q24.svg",
+    "hint": "disk method",
     "input": true,
-    "inputAnswer": "2"
+    "inputAnswer": "4/3",
+    "explanation": "images/Calc4Q24E.svg"
   },
   {
     "Number": 25,
     "Question": "images/Calc4Q25.svg",
     "input": true,
-    "inputAnswer": "9"
+    "inputAnswer": "3",
+    "hint": "arc length",
+    "explanation": "images/Calc4Q25E.svg"
   }
 ]

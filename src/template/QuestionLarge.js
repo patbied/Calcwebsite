@@ -26,15 +26,164 @@ export default function Question(props) {
   const [TrueWasFalse, setTrueWasFalse] = useState(false);
   const [False, setFalse] = useState(false);
   const [FalseWasFalse, setFalseWasFalse] = useState(false);
-  //fetch the users answer from local storage and store it in a variable
-  const answer = localStorage.getItem(props.question);
+  const [TypeChooseAll, setTypeChooseAll] = useState(false);
+  const [chooseA, setChooseA] = useState(false);
+  const [chooseB, setChooseB] = useState(false);
+  const [chooseC, setChooseC] = useState(false);
+  const [chooseD, setChooseD] = useState(false);
 
+  //fetch the users answer from local storage and store it in a variable
+
+  let answerAName = `${props.question}A`
+  let answerBName = `${props.question}B`
+  let answerCName = `${props.question}C`
+  let answerDName = `${props.question}D`
+
+
+    const answer = localStorage.getItem(props.question);
+    let answerA = localStorage.getItem(answerAName);
+    let answerB = localStorage.getItem(answerBName);
+    let answerC = localStorage.getItem(answerCName);
+    let answerD = localStorage.getItem(answerDName);
+  function checkChooseAll() {
+
+    if (answerA || answerB || answerC || answerD) {
+      return null;
+    } else { 
+
+    if (chooseA === true) {
+      if (props.correct.includes("A")) { 
+        setCorrect1(true)
+        setChooseA(false)
+        localStorage.setItem(answerAName, true)
+      }
+      else {
+        setIncorrect1(true)
+        setChooseA(false)
+        localStorage.setItem(answerAName, false)
+       }
+    }
+    if (props.correct.includes("A")) {
+      if (chooseA === false) {
+        setIncorrect1(true)
+        setChooseA(false)
+        localStorage.setItem(answerAName, false)
+    }
+  }
+    if (chooseB === true) {
+      if (props.correct.includes("B")) { 
+        setCorrect2(true)
+        setChooseB(false)
+        localStorage.setItem(answerBName, true)
+      }
+      else {
+        setIncorrect2(true)
+        setChooseB(false)
+        localStorage.setItem(answerBName, false)
+       }
+      }
+      if (props.correct.includes("B")) {
+        if (chooseB === false) {
+          setIncorrect2(true)
+          setChooseB(false)
+          localStorage.setItem(answerBName, false)
+      }
+    }
+      if (chooseC === true) {
+        if (props.correct.includes("C")) { 
+          setCorrect3(true)
+          setChooseC(false)
+          localStorage.setItem(answerCName, true)
+        }
+        else {
+          setIncorrect3(true)
+          setChooseC(false)
+          localStorage.setItem(answerCName, false)
+         }
+      }
+      if (props.correct.includes("C")) {
+        if (chooseC === false) {
+          
+          setIncorrect3(true)
+          setChooseC(false)
+          localStorage.setItem(answerCName, false)
+      }
+    }
+      if (chooseD === true) {
+        if (props.correct.includes("D")) { 
+          setCorrect4(true)
+          setChooseD(false)
+          localStorage.setItem(answerDName, true)
+        }
+        else {
+          setIncorrect4(true)
+          setChooseD(false)
+          localStorage.setItem(answerDName, false)
+         }
+      }
+    if (props.correct.includes("D")) {
+
+        if (chooseD === false) {
+          setIncorrect4(true)
+          setChooseD(false)
+          localStorage.setItem(answerDName, false)
+      }
+    }
+    }
+  }
+    
+
+    
+    
+ 
   useEffect(() => {
+    if (props.chooseAll) {
+
+
+      if (answerA === 'true') {
+        console.log("Answer a is correct")
+        setCorrect1(true)
+        setChooseA(false)
+
+      }
+      if (answerA === 'false') {
+        console.log("Answer a is NOT correct")
+        setIncorrect1(true)
+        setChooseA(false)
+      }
+      if (answerB === 'true') {
+        setCorrect2(true)
+        setChooseB(false)
+      }
+      if (answerB === 'false') {
+        setIncorrect2(true)
+        setChooseB(false)
+      }
+      if (answerC === 'true') {
+        setCorrect3(true)
+        setChooseC(false)
+      }
+      if (answerC === 'false') {
+        setIncorrect3(true)
+        setChooseC(false)
+      }
+      if (answerD === 'true') {
+        setCorrect4(true)
+        setChooseD(false)
+      }
+      if (answerD === 'false') {
+        setIncorrect4(true)
+        setChooseD(false)
+      }
+    }
     if (props.input) {
       setTypeInput(true);
     } else if (props.TrueOrFalse) {
       setTypeTrueOrFalse(true);
-    } else {
+    } else if (props.chooseAll) {
+      setTypeChooseAll(true);
+    }
+    else {
       setTypeDefault(true);
     }
 
@@ -101,8 +250,8 @@ export default function Question(props) {
   return (
     <div className="boxContent  Large boxContentQuestion">
       <div className="boxTop">
-        <h2 style={{ display: 'inline' }}>{props.number}.</h2>
-
+        <h2 style={{ display: 'inline', fontWeight: 'bolder' }}>{props.number}.</h2>
+    
         <p
           onClick={() => {
             openHint(!hint);
@@ -124,6 +273,92 @@ export default function Question(props) {
           alt="For some reason this question did not load properly :/"
         ></img>
       </div>
+      {TypeChooseAll ?<>   <div className="buttons">
+            <button
+              id="A"
+              onClick={() => {
+                if (answerA || answerB || answerC || answerD) {
+                  return null;
+                } else {
+                setChooseA(!chooseA);
+                }
+              }}
+              className={`boxP buttonQuestion LargeButton ${
+                correct1 ? 'correctButton' : ''
+              } ${incorrect1 ? 'incorrectButton ' : ''} ${
+                answer ? 'disabledInput' : ''
+              } ${chooseA ? 'chosen' : ''} `}
+            >
+              <img
+                alt="For some reason this question did not load properly :/"
+                src={props.answer1}
+              ></img>
+            </button>
+            <button
+              id="B"
+              onClick={() => {
+                if (answerA || answerB || answerC || answerD) {
+                  return null;
+                } else {
+                  setChooseB(!chooseB);
+                }
+              }}
+              className={`boxP buttonQuestion LargeButton ${
+                correct2 ? 'correctButton' : ''
+              } ${incorrect2 ? 'incorrectButton ' : ''} ${
+                answer ? 'disabledInput' : ''
+              } ${chooseB ? 'chosen' : ''}`}
+            >
+              <img
+                alt="For some reason this question did not load properly :/"
+                src={props.answer2}
+              ></img>
+            </button>
+            <button
+              id="C"
+              onClick={() => {
+                if (answerA || answerB || answerC || answerD) {
+                  return null;
+                } else {
+                  setChooseC(!chooseC);
+                }
+              }}
+              className={`boxP buttonQuestion LargeButton ${
+                correct3 ? 'correctButton' : ''
+              } ${incorrect3 ? 'incorrectButton ' : ''} ${
+                answer ? 'disabledInput' : ''
+              } ${chooseC ? 'chosen' : ''}`}
+            >
+              <img
+                alt="For some reason this question did not load properly :/"
+                src={props.answer3}
+              ></img>
+            </button>
+            <button
+              id="D"
+              onClick={() => {
+                if (answerA || answerB || answerC || answerD) {
+                  return null;
+                } else {
+                  setChooseD(!chooseD);
+                }
+              }}
+              className={`boxP buttonQuestion LargeButton ${
+                correct4 ? 'correctButton' : ''
+              } ${incorrect4 ? 'incorrectButton ' : ''} ${
+                answer ? 'disabledInput' : ''
+              } ${chooseD ? 'chosen' : ''} `}
+            >
+              <img
+                alt="For some reason this question did not load properly :/"
+                src={props.answer4}
+              ></img>
+            </button>
+      </div>
+        <div style={{display: 'flex', justifyContent:'center', paddingTop:'20px'}}> 
+        <button className="boxP buttonQuestion LargeButton" onClick={checkChooseAll}>
+        Submit
+        </button></div> </>: ''}
       {/* CHECK IF THE QUESTION IS AN INPUT QUESTION */}
       {TypeInput ? (
         <div className="inputBox">
@@ -134,7 +369,11 @@ export default function Question(props) {
                   incorrect ? 'incorrect' : ''
                 }`}
               >
-                Answer: {Answer}
+                Your Answer: {Answer}
+                <p className="correct">   {`${correct ? '' : `Correct Answer: ${props.inputAnswer}`}`}  {`${props.inputAnswer2 ? `or ${props.inputAnswer2}` : ''}`} {`${props.inputAnswer3 ? `or ${props.inputAnswer3}` : ''}`}</p>
+                
+             
+                
               </span>
             </div>
           ) : (
@@ -199,7 +438,8 @@ export default function Question(props) {
               answer ? 'disabledInput' : ''
             }`}
           >
-            True
+          {props.trueImage ? <img alt="For some reason this question did not load properly :/" src={props.trueImage}></img> : 'True'}
+            
           </button>
           <button
             onClick={() => {
@@ -223,7 +463,8 @@ export default function Question(props) {
               answer ? 'disabledInput' : ''
             }`}
           >
-            False
+         
+           {props.falseImage ? <img alt="For some reason this question did not load properly :/" src={props.falseImage}></img> : 'True'}
           </button>
         </div>
       ) : (
@@ -264,7 +505,7 @@ export default function Question(props) {
                 correct1 ? 'correctButton' : ''
               } ${incorrect1 ? 'incorrectButton ' : ''} ${
                 answer ? 'disabledInput' : ''
-              } ${props.ButtonLG ? 'Larger' : ''}`}
+              } `}
             >
               <img
                 alt="For some reason this question did not load properly :/"
@@ -302,7 +543,7 @@ export default function Question(props) {
                 correct2 ? 'correctButton' : ''
               } ${incorrect2 ? 'incorrectButton ' : ''} ${
                 answer ? 'disabledInput' : ''
-              } ${props.ButtonLG ? 'Larger' : ''}`}
+              } `}
             >
               <img
                 alt="For some reason this question did not load properly :/"
@@ -340,7 +581,7 @@ export default function Question(props) {
                 correct3 ? 'correctButton' : ''
               } ${incorrect3 ? 'incorrectButton ' : ''} ${
                 answer ? 'disabledInput' : ''
-              } ${props.ButtonLG ? 'Larger' : ''}`}
+              } `}
             >
               <img
                 alt="For some reason this question did not load properly :/"
@@ -378,7 +619,7 @@ export default function Question(props) {
                 correct4 ? 'correctButton' : ''
               } ${incorrect4 ? 'incorrectButton ' : ''} ${
                 answer ? 'disabledInput' : ''
-              } ${props.ButtonLG ? 'Larger' : ''} `}
+              }  `}
             >
               <img
                 alt="For some reason this question did not load properly :/"

@@ -109,5 +109,128 @@
     "correct": "D",
     "hint": "",
     "input": false
+  },
+  {
+    "Number": 11,
+    "Question": "images/Calc2Q11.svg",
+    "answer1": "images/Calc2Q11A.svg",
+    "answer2": "images/Calc2Q11B.svg",
+    "answer3": "images/Calc2Q11C.svg",
+    "answer4": "images/Calc2Q11D.svg",
+    "correct": ["A", "B"],
+    "hint": "",
+    "chooseAll": true
+  },
+  {
+    "Number": 12,
+    "Question": "images/Calc2Q12.svg",
+    "answer1": "images/Calc2Q12A.svg",
+    "answer2": "images/Calc2Q12B.svg",
+    "answer3": "images/Calc2Q12C.svg",
+    "answer4": "images/Calc2Q12D.svg",
+    "correct": ["A"],
+    "hint": "",
+    "chooseAll": true
+  },
+  {
+    "Number": 13,
+    "Question": "images/Calc2Q13.svg",
+    "answer1": "images/Calc2Q13A.svg",
+    "answer2": "images/Calc2Q13B.svg",
+    "answer3": "images/Calc2Q13C.svg",
+    "answer4": "images/Calc2Q13D.svg",
+    "correct": "D",
+    "hint": ""
+  },
+  {
+    "Number": 14,
+    "Question": "images/Calc2Q14.svg",
+    "answer1": "images/Calc2Q14A.svg",
+    "answer2": "images/Calc2Q14B.svg",
+    "answer3": "images/Calc2Q14C.svg",
+    "answer4": "images/Calc2Q14D.svg",
+    "correct": "B",
+    "hint": ""
+  },  {
+    "Number": 15,
+    "Question": "images/Calc2Q15.svg",
+    "answer1": "images/Calc2Q15A.svg",
+    "answer2": "images/Calc2Q15B.svg",
+    "answer3": "images/Calc2Q15C.svg",
+    "answer4": "images/Calc2Q15D.svg",
+    "correct": "D",
+    "hint": ""
+  },{
+    "Number": 16,
+    "Question": "images/Calc2Q16.svg",
+    "answer1": "images/Calc2Q16A.svg",
+    "answer2": "images/Calc2Q16B.svg",
+    "answer3": "images/Calc2Q16C.svg",
+    "answer4": "images/Calc2Q15D.svg",
+    "correct": "A",
+    "hint": ""
+  },{
+    "Number": 17,
+    "Question": "images/Calc2Q17.svg",
+    "answer1": "images/Calc2Q17A.svg",
+    "answer2": "images/Calc2Q17B.svg",
+    "answer3": "images/Calc2Q17C.svg",
+    "answer4": "images/Calc2Q17D.svg",
+    "correct": "B",
+    "hint": ""
+  },
+  {
+    "Number": 18,
+    "Question": "images/Calc2Q18.svg",
+    "answer1": "images/Calc2Q18A.svg",
+    "answer2": "images/Calc2Q18B.svg",
+    "answer3": "images/Calc2Q17C.svg",
+    "answer4": "images/Calc2Q18D.svg",
+    "correct": "C",
+    "hint": ""
+  },{
+    "Number": 19,
+    "Question": "images/Calc2Q19.svg",
+    "answer1": "images/Calc2Q19A.svg",
+    "answer2": "images/Calc2Q19B.svg",
+    "answer3": "images/Calc2Q17C.svg",
+    "answer4": "images/Calc2Q19D.svg",
+    "correct": "B",
+    "hint": ""
+  },
+  {
+    "Number": 20,
+    "Question": "images/Calc2Q20.svg",
+    "answer1": "images/Calc2Q20A.svg",
+    "answer2": "images/Calc2Q20B.svg",
+    "answer3": "images/Calc2Q20C.svg",
+    "answer4": "images/Calc2Q20D.svg",
+    "correct": "C",
+    "hint": ""
+  },{
+    "Number": 21,
+    "Question": "images/Calc2Q21.svg",
+    "input": true,
+    "inputAnswer": "1.31"
+  },{
+    "Number": 22,
+    "Question": "images/Calc2Q22.svg",
+    "input": true,
+    "inputAnswer": "1/6"
+  },{
+    "Number": 23,
+    "Question": "images/Calc2Q23.svg",
+    "input": true,
+    "inputAnswer": "-8.33"
+  },{
+    "Number": 24,
+    "Question": "images/Calc2Q24.svg",
+    "input": true,
+    "inputAnswer": "8"
+  },{
+    "Number": 25,
+    "Question": "images/Calc2Q25.svg",
+    "input": true,
+    "inputAnswer": "36"
   }
 ]

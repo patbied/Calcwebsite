@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -10,14 +10,12 @@ import Calc4 from './pages/Calc4';
 import Calc5 from './pages/Calc5';
 import './styles/all.scss';
 export default function App() {
-  const [darkmode, setDarkmode] = useState(true);
 
-  document.body.style.backgroundColor = darkmode
-    ? '#a2d5e9'
-    : 'rgb(125, 125, 125)';
+  
+  document.body.style.backgroundColor = '#a2d5e9'
   return (
     <Router>
-      <Navbar  />
+      <Navbar />
       <Switch>
         <Route path="/"  exact component={Home}></Route>
         <Route
@@ -26,28 +24,28 @@ export default function App() {
           component={About}
         ></Route>
         <Route
-          path="/calc1"
+          path="/Limits"
           exact
           component={Calc1}
         ></Route>
         <Route
-          path="/calc2"
+          path="/Differentiation"
     
           exact
           component={Calc2}
         ></Route>
         <Route
-          path="/calc3"
+          path="/Integration"
           exact
           component={Calc3}
         ></Route>
         <Route
-          path="/calc4"
+          path="/ApplicationOfIntegration"
           exact
           component={Calc4}
         ></Route>
         <Route
-          path="/calc5"
+          path="/DifferentialEquations"
           exact
           component={Calc5}
         ></Route>

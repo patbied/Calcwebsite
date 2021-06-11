@@ -4,42 +4,35 @@
     "name": "Limits",
     "desc": "Computing limits and finding limits from graphs",
     "amount": "20",
-    "direction": "/calc1"
+    "direction": "/Limits"
   },
   {
     "id": 2,
     "name": "Differentiation",
     "desc": "This is better for fwadnawndiawuudj9696969",
     "amount": "10",
-    "direction": "/calc2"
+    "direction": "/Differentiation"
   },
   {
     "id": 3,
     "name": "Integration",
     "desc": "DWAODNAWBDOUWABUO",
     "amount": "25",
-    "direction": "/calc3"
+    "direction": "/Integration"
   },
   {
     "id": 4,
     "name": "Applications of integration",
     "desc": "DWAODNAWBDOUWABUO",
     "amount": "25",
-    "direction": "/calc4"
+    "direction": "/ApplicationOfIntegration"
   },
   {
     "id": 5,
     "name": "Differential equations",
     "desc": "DWAODNAWBDOUWABUO",
     "amount": "25",
-    "direction": "/calc5"
-  },
-  {
-    "id": 6,
-    "name": "Taylor and Maclauren series",
-    "desc": "DWAODNAWBDOUWABUO",
-    "difficulty": "3",
-    "amount": "20",
-    "direction": "/calc1"
+    "direction": "/DifferentialEquations"
   }
+
 ]

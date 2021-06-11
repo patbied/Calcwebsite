@@ -36,6 +36,7 @@ export default function Calc5() {
               explanation={question.explanation}
               ButtonLG={question.largerButton}
               TrueOrFalse={question.TrueOrFalse}
+              chooseAll={question.chooseAll}
             />
           );
         })}

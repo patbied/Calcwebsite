@@ -5,10 +5,10 @@ export default function Box(props) {
   return (
     <div className={`boxContent ${props.class} `}>
       <a href={props.direction}>
-        <h1>{props.name}</h1>
-        <p className="boxP">Description: {props.description}</p>
+        <h1 style={{textAlign: 'center'}}>{props.name}</h1>
+       
 
-        <p className="boxP">Questions: {props.amount}</p>
+       
       </a>
     </div>
   );
